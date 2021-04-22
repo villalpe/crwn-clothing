@@ -52,13 +52,13 @@ class SignUp extends React.Component {
                 <span>Sign up with your email and password</span>
                 <form className="sign-up-form" onSubmit={this.handleSubmit}>
                     <FormInput name="displayName" type="text" value={this.state.displayName} 
-                    label='display Name' handleChange={this.handleChange} required />
+                    label='Display Name' handleChange={this.handleChange} required />
                     <FormInput name="email" type="email" value={this.state.email} 
-                    label='email' handleChange={this.handleChange} required />
+                    label='Email' handleChange={this.handleChange} required />
                     <FormInput name="password" type="password" value={this.state.password} 
-                    label='password' handleChange={this.handleChange} required />
+                    label='Password' handleChange={this.handleChange} required />
                     <FormInput name="confirmPassword" type="password" value={this.state.confirmPassword} 
-                    label='confirm Password' handleChange={this.handleChange} required />
+                    label='Confirm Password' handleChange={this.handleChange} required />
                     <CustomButton type="submit">
                         SIGN UP
                     </CustomButton>                                                         
