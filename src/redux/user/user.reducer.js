@@ -1,17 +1,17 @@
+import { SET_CURRENT_USER } from '../constants/user-const';
+
 const INITIAL_STATE = {
     currentUser: null
 }
 
-
 const userReducer = (state = INITIAL_STATE, action) => {
-    if (action.type === 'SET_CURRENT_USER') {
+    if (action.type === SET_CURRENT_USER) {
         return {
             ...state,
             currentUser: action.payload
         }
-    } else {
-        return state;
-    }    
+    }
+    return state;
 }
 
 export default userReducer;
